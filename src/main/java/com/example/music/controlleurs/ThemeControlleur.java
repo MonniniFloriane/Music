@@ -2,10 +2,7 @@ package com.example.music.controlleurs;
 
 import com.example.music.modele.Groupes;
 import com.example.music.repos.GroupesRepos;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
@@ -20,5 +17,10 @@ public class ThemeControlleur {
     @GetMapping("/groupe")
     public List<Groupes> getGroupes() {
         return groupesRepos.findAll();
+    }
+
+    @PostMapping("/addGroupe")
+    public Groupes addGroupe(@RequestBody Groupes groupe) {
+        return groupesRepos.save(groupe);
     }
 }

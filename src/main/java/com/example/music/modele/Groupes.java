@@ -31,7 +31,7 @@ public class Groupes {
         return groupe_ID;
     }
 
-    public void setNom(String groupe_nom) {
+    public void setNom(String nom) {
         this.nom = nom;
     }
 

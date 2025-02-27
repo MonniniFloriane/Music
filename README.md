@@ -12,7 +12,7 @@ Test d'API pour gérer les collections de music pour gérer les albums, leurs ge
 - Le fichier "MusicAPI" à la source, contient les requetes PostMan
 
 - Le projet est stocker en Local, sur le port 8080, veuillez trouver ci-joint le lien Github pour voir le code plus en détails
-"Lien".
+  https://github.com/MonniniFloriane/Music
 
 - Les dossiers de base du projet se trouvent dans "src>main>java>com.exemple.music".
 
@@ -24,3 +24,4 @@ Test d'API pour gérer les collections de music pour gérer les albums, leurs ge
 - Etape 4 : Test dans la base de donnée local
 - Etape 5 : Création de données au lancement de la BDD
 - Etape 6 : Creer des routes sur Postman pour afficher sous forme JSON le contenu des classes
+- Etape 7-d : Ajouter à l’API des capacités d’édition des données (ajout, suppression, voir édition des objets)
