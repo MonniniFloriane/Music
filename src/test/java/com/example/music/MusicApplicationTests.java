@@ -1,10 +1,10 @@
-package com.example.lego;
+package com.example.music;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class LegoApplicationTests {
+class MusicApplicationTests {
 
     @Test
     void contextLoads() {
