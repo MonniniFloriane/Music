@@ -1,8 +1,0 @@
-lego
-
-Test d'API pour gérer les collection de lego avec leurs sets et les collectionneurs
-
-Etape 1 : Lancement du projet avec les dependance (H2 database, Spring boot, JPA et Faker)
-Etape 2 : Créations des classes (Collection, Collectionneur, et Sets)
-Etape 3 : Gestion des relations et transformation des classes en Entity
-Etpae 4 : Test dans la base de donnée local

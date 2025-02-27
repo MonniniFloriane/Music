@@ -10,6 +10,7 @@ import java.util.List;
 public class Collection {
 
     @Id
+    @GeneratedValue
     protected Long id;
 
     protected String name;
@@ -17,17 +18,26 @@ public class Collection {
     protected int nbr_pieces;
     protected int nbr_minifigs;
 
-    @ManyToOne
+    @ManyToOne(cascade = CascadeType.ALL)
     @JoinColumn(name = "collectionneur_ID")
-    protected Collectionneur collectionneur = new Collectionneur();
+    protected Collectionneur collectionneur ;
 
     protected String image;
     protected String description;
 
-    @OneToMany
-    private List<Sets> set = new ArrayList<>();
+    @OneToMany(cascade = CascadeType.ALL)
+    protected List<Sets> set = new ArrayList<>();
 
     public Collection() {}
+
+    public Collection(String name, int nbr_scenes, int nbr_pieces, int nbr_minifigs, String image, String description) {
+        this.name = name;
+        this.nbr_scenes = nbr_scenes;
+        this.nbr_pieces = nbr_pieces;
+        this.nbr_minifigs = nbr_minifigs;
+        this.image = image;
+        this.description = description;
+    }
 
     public void setId(Long id) {
         this.id = id;

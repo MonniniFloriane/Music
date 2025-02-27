@@ -5,6 +5,7 @@ import jakarta.persistence.*;
 @Entity
 public class Collectionneur {
     @Id
+    @GeneratedValue(strategy = GenerationType.AUTO)
     protected Long collectionneur_ID;
 
     protected String nom;
